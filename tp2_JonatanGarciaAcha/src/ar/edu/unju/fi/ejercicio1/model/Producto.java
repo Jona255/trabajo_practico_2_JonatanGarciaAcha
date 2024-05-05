@@ -42,8 +42,23 @@ public class Producto {
 
 
 
-	public void setOrigen(OrigenFabricacion origen) {
-		this.origen = origen;
+	public void setOrigen(int opc) {
+		switch (opc) {
+		case 0:			
+			this.origen = origen.ARGENTINA;
+			break;
+		case 1:			
+			this.origen = origen.BRASIL;
+			break;
+		case 2:
+			this.origen = origen.CHINA;
+			break;
+		case 3:
+			this.origen = origen.URUGUAY;
+			break;
+		default:
+			break;
+		}
 	}
 
 
@@ -54,8 +69,23 @@ public class Producto {
 
 
 
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
+	public void setCategoria(int opc) {
+		switch (opc) {
+		case 0:			
+			this.categoria = categoria.TELEFONIA;
+			break;
+		case 1:			
+			this.categoria= categoria.INFORMATICA;
+			break;
+		case 2:
+			this.categoria= categoria.ELECTROHOGAR;
+			break;
+		case 3:
+			this.categoria= categoria.HERRAMIENTAS;
+			break;
+		default:
+			break;
+		}
 	}
 
 
